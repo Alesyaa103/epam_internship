@@ -184,7 +184,7 @@ img:hover {
 }
 
 .news div div,
-.top__right div {
+.top__right section div {
   padding-left: calc(10% + 20px);
   display: flex;
   flex-direction: column;
@@ -208,7 +208,7 @@ img:hover {
 .top__left,
 .top__right {
   width: 50%;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .top__left {
@@ -267,13 +267,13 @@ img:hover {
   width: 0;
 }
 
-.top__right section {
+.top__right>div {
   width: calc(50% - 20px);
-  margin: 0 0 20px 20px;
+
 }
 
-.top__right--small {
-  flex: 0 0 auto;
+.top__right section {
+  margin: 0 0 20px 20px;
 }
 
 .top__right--small figure {
@@ -287,9 +287,12 @@ img:hover {
   background-color: rgb(242, 242, 242);
 }
 
+.clearFix {
+  clear: both;
+}
+
 aside {
   background-color: rgb(36, 37, 38);
-  clear: both;
 }
 
 aside div:first-of-type {
@@ -314,6 +317,7 @@ aside h2 {
   font-size: 200px;
   color: rgb(45, 46, 47);
   border-top: none;
+  margin-left: 40px;
 }
 
 footer {
